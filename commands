@@ -1,0 +1,21 @@
+composer create-project --prefer-dist laravel/laravel gestion-de-tareas
+
+npm install axios
+npm run dev
+
+
+composer require laravel/breeze --dev
+php artisan breeze:install vue
+npm install && npm run dev
+php artisan migrate
+
+
+
+php artisan make:model Task -m
+php artisan make:controller TaskController
+
+
+
+php artisan make:seeder UsersTableSeeder
+php artisan db:seed
+php artisan db:seed --class=UsersTableSeeder
